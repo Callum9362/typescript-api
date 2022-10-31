@@ -1,6 +1,6 @@
 import {Response} from 'express';
 
-export class IndexController {
+export class indexController {
 
     constructor() 
     {

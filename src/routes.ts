@@ -1,11 +1,11 @@
 import {Express, Request, Response} from 'express';
-import { IndexController } from './controllers/index.controller';
+import { indexController } from './controllers/index.controller';
 
 function routes(app: Express){
 
     // Example of routes chained
     app.route('/')
-    .get(IndexController.getIndexPage(res: Response))
+    .get(indexController.getIndexPage(res: Response))
     
     .post((req: Request, res: Response) => {
         return res.send("You made a POST Request");
